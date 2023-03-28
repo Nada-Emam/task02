@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+
+
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+.statistics {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/sec05.png);
+    /* background-size:cover; */
+    width: 100%;
+    height: 100vh;
+}
+
+.statistics h3{
+    font-family: poppins;
+    font-size: 50px;
+    font-weight: 500;
+    color: yellow;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.statistics p{
+    color: white;
+    width: 500px;
+    font-size: 16px;
+    font-family: montserrat;
+    /* text-align: center; */
+    /* line-height: 1.5px; */
+    padding: 5px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* .two-circles {
+    dispaly: block;
+} */
+.circles div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: white 4px solid;
+    border-radius: 50%;
+    margin: 50px 20px;
+    
+}
+
+.circles h4{
+    font-family: poppins;
+    font-size: 20px;
+    color: yellow;
+    padding-bottom: 5px;
+}
+
+.circles h5{
+    font-family: montserrat;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* ----------------------Responsive-------------------------- */
+
+@media only screen and (max-width: 900px) {
+    .circles{
+        flex-wrap: wrap;
+    }
+    .circles div {
+        width: 250px;
+        height: 250px;
+    }
+  }
+
+/* ----------------------------------------------------- */
